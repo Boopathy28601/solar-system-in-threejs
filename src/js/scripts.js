@@ -7,7 +7,7 @@ import mercuryTexture from '../img/mercury.jpg';
 import venusTexture from '../img/venus.jpg';
 import earthTexture from '../img/earth.jpg';
 import marsTexture from '../img/mars.jpg';
-import jupiterTextuure from '../img/jupiter.jpg';
+import jupiterTexture from '../img/jupiter.jpg';
 import saturnTexture from '../img/saturn.jpg';
 import saturnRingTexture from '../img/saturn ring.png';
 import uranusTexture from '../img/uranus.jpg';
@@ -90,19 +90,19 @@ const mercury = createPlanet(3.2, mercuryTexture, 28);
 const venus = createPlanet(5.8, venusTexture, 44);
 const earth = createPlanet(6, earthTexture, 62);
 const mars = createPlanet(4, marsTexture, 78);
-const jupiter = createPlanet(12, jupiterTextuure, 100);
+const jupiter = createPlanet(12, jupiterTexture, 100);
 const saturn = createPlanet(10, saturnTexture, 138, {
     innerRadius: 10,
     outerRadius: 20,
     texture: saturnRingTexture
 });
 const uranus = createPlanet(7, uranusTexture, 176, {
-    innerRadius: 10,
-    outerRadius: 20,
+    innerRadius: 7,
+    outerRadius: 12,
     texture: uranusRingTexture
 });
-const neptune = createPlanet(7, jupiterTextuure, 200);
-const pluto = createPlanet(2.8, jupiterTextuure, 216);
+const neptune = createPlanet(7, neptuneTexture, 200);
+const pluto = createPlanet(2.8, plutoTexture, 216);
 
 const pointLight = new THREE.PointLight(0xFFFFFF, 5000, 300);
 scene.add(pointLight);
